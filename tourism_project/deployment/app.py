@@ -56,7 +56,7 @@ input_data = pd.DataFrame([{
 if st.button("Predict Purchase"):
     prediction = model.predict(input_data)[0]
     if prediction == 1:
-      result = "Customer is unlikely to purchase tourism package"  
+      result = "Customer is unlikely to purchase tourism package"
     else:
       result = "Customer is likely to purchase tourism package"
     st.subheader("Prediction Result:")
